@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <main>
+    <main style="position: relative; max-width: 100vw;">
         <!-- overlay on page load -->
         <div class="overlay"></div>
         <!-- city selectation cards -->
@@ -1022,13 +1022,33 @@
         <footer class="footer">
             <div class="footer-top">
                 <div class="container">
-
                     <div class="col col-1">
-                        <div class="footer-logo">
-                            <img src="assets/img/footer-logo.png" alt="">
-                        </div>
+                        <img src="assets/img/footer-logo.png" alt="">
+                        <p>
+                            We are new in the market, however,
+                            within a few months, we have gained
+                            a significant position in the field.
+                        </p>
+                    </div>
 
-                        <div class="col-1-info">
+                    <div class="line"></div>
+
+                    <div class="col col-2">
+                        <h4>POLICIES & INFO</h4>
+                        <div>
+                            <a href="#">About us</a>
+                            <a href="#">Contact us</a>
+                            <a href="#">Privacy & Poacy</a>
+                            <a href="#">Terms & Condition</a>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="col col-3">
+                        <h4>GET IN TOUCH</h4>
+
+                        <div>
                             <a href="tel:042-35180932">
                                 <img src="assets/img/phone-icon.png" alt="">
                                 042-35180932
@@ -1036,45 +1056,26 @@
 
                             <a href="mailto:info@deliverychamps.pk">
                                 <img src="assets/img/email-icon.png" alt="">
-                               info@deliverychamps.pk
+                                info@deliverychamps.pk
                             </a>
 
-                        </div>       
-                    </div>
-                    
-
-                    <div class="col col-2">
-                        <h4 class="text-base">POLICIES & INFO</h4>
-
-                        <ul>
-                            <li>
-                                <a href="#">About us</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact us</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy & Policy</a>
-                            </li>
-                            <li>
-                                <a href="#">Terms & Condition</a>
-                            </li>
-                        </ul>
-
-                    </div>
-
-                    <div class="col col-3">
-                        <h4 class="text-base">FIND US</h4>
-                        <a href="#">
-                            <!-- <img src="assets/img/location-icon-2.png" alt=""> -->
-                            House #77, Block E1, Wapda Town Phase1,
-                            Lahore, Punjab, Pakistan
-                        </a>
-                        <div class="">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27234.768568410247!2d74.2766072!3d31.432138300000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1681896824423!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Deliverychamps Head Office Location"></iframe>
+                            <a href="https://goo.gl/maps/eEcMgf4qnU6j4XBz9">
+                                <img src="assets/img/location-icon-2.png" alt="">
+                                House #77, Block E1, <br>
+                                Wapda Town Phase1
+                            </a>
                         </div>
                     </div>
-                    
+
+                    <div class="line"></div>
+
+                    <div class="col col-4">
+                        <h4>FIND US</h4>
+
+                        <div class="">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425.5290894131623!2d74.26871897546546!3d31.435259697714145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905fa83d43c93%3A0xca96d898e2f0db21!2sWAAN%20Tech%20Pvt.%20Ltd!5e0!3m2!1sen!2s!4v1689426323635!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -1151,19 +1152,20 @@
             // infinite: false,
             slidesToShow: 10,
             slidesToScroll: 1,
-            // variableWidth: true,
-            // centerMode: true,
+
             responsive: [
                 {
-                breakpoint: 1300,
-                settings: {
-                    slidesToShow: 8,
-                }
+                    breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 8,
+                    }
                 },
                 {
                     breakpoint: 1100,
                     settings: {
                         slidesToShow: 6,
+                        variableWidth: true,
+                        centerMode: true,
                     }
                 },
                 
@@ -1171,6 +1173,7 @@
                     breakpoint: 1025,
                     settings: {
                         slidesToShow: 5,
+                        slidesToScroll: 3,
                     }
                 },
                 {

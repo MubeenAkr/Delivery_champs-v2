@@ -4,27 +4,34 @@ const cityCard = document.querySelectorAll(".city-card");
 const locationBtn = document.querySelector(".nav-center-location");
 const addressBox = document.querySelector(".address-modal-box");
 
-const home = (e) =>{
-   e.preventDefault();
-   modalBox.classList.toggle("active");
-   overLay.classList.toggle("active");
-}
 
 cityCard.forEach(card => {
-   card.addEventListener('click', home)
+   card.addEventListener('click', function(e){
+      e.preventDefault()
+      overLay.classList.remove('active');
+      modalBox.classList.remove('active');
+   })
 })
 
-window.addEventListener('load', home);
+window.addEventListener('load', function(e) {
+   e.preventDefault();
+   overLay.classList.add('active');
+   modalBox.classList.add('active');
+});
 
-overLay.addEventListener('click', home);
+overLay.addEventListener('click', function(e){
+   e.preventDefault();
+   overLay.classList.remove('active')
+   modalBox.classList.remove('active');
+   addressBox.classList.remove('active')
+});
 
+locationBtn.addEventListener('click', function(e) {
+   e.preventDefault();
+   addressBox.classList.add('active');
+   overLay.classList.add('active');
+})
 
-// locationBtn.addEventListener('click', function(e) {
-//    e.preventDefault();
-//    overLay.classList.add('active');
-//    addressBox.classList.toggle('active');
-//    modalBox.classList.remove('active') 
-// })
 
 
 

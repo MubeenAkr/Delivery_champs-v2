@@ -177,8 +177,9 @@
                 list-style: none;
                 display: flex;
                 flex-wrap: wrap;
-                gap: 15px;
-                row-gap: 5px;
+                gap: 5px;
+
+                // row-gap: 5px;
                 align-self: flex-end;
                 color: var(--text-color-2);
 

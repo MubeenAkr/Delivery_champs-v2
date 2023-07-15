@@ -1,7 +1,8 @@
 .footer{
-    
+    // display: none;
+
     .container{
-        max-width: 940px;
+        max-width: 1240px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -23,7 +24,20 @@
 
     &-top {
         background-color: var(--bg-color-3);
-        padding: 75px 0;       
+        padding: 75px 0;  
+        
+        .container {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            gap: 70px;
+            
+            .line {
+                width: 1px !important;
+                background-color: #999;
+            }
+        }
+
     }
 
 
@@ -32,9 +46,11 @@
         padding: 20px 0;
 
         .container{
+            max-width: 1360;
             @media (max-width:600px) {
                 gap: 20px;
                 flex-direction: column;
+
             }
         }
 
@@ -44,129 +60,86 @@
         }
 
         p{
-            margin: 0 auto;
+            // margin: 0 auto;
             @extend .text-sm;
             color: #999;
+        
         }
     }
 }
 
-.col{
+.col {
 
-    a,li {
-        color: #999999;
-        @extend .text-sm;
-        transition: all 0.3s ease;
-
-        &:hover{
-            color: var(--text-color-1);    
-        }
-    }
-
-    h4{
+    h4 {
+        @extend .text-base;
         color: var(--color-white);
-        margin-bottom: 15px;
+        margin-bottom: 23px;
     }
 
-    &:not(:first-of-type){
-        padding-left: 54px;
-        border-left: 1px solid #999999;
-
-        @media (max-width:1120px) {
-            padding-left: 40px;
-        }
-        
-        @media (max-width:900px) {
-            padding-left: 0px;
-            border-left: none;
-        }    
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
+    a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        @extend .text-sm;
+        color: #999;
+        transition: all 0.3s ease-in-out;
 
-    &-1{
-        flex-basis: 33%;
-       
-        @media (max-width:900px) {
-            margin-right: 0px;
-        }
-        
-        .footer-logo {
-            img {
-                max-width: 141px;
-            }
-        }
+        &:hover {
+            color: var(--text-color-1);
 
-        &-info{
-            margin-top: 20px;
-
-            a{
-                display: flex;
-                align-items: start;
-                text-decoration: none;
-                gap: 15px;
-                transition: all 0.3s ease;
-                width: max-content;
-                
-                &:not(:last-of-type){
-                    margin-bottom: 12px;
-                }
+            &::before {
+                background-color: var(--text-color-1);
             }
         }
     }
 
-    &-2{
-        flex-basis: 33%;
+    &-1 {
+        max-width: 230px;
+        width: 100%;
 
-        ul{
-            list-style-type: square;
-
-            display: flex;
-            flex-direction: column;
-            gap: 18px;
-            padding-left: 16px;
-
-            li{
-                transition: all 0.3s ease;            
-            }
-        }
-    }
-
-    &-3{
-        flex-basis: 34%;
-
-        @media (max-width:883px) {
-            border-left: none !important;
-            padding-left: 0;
-        }
-        
-        a{
-            margin-block: 7px;
+        img {
             display: block;
-            max-width: 270px;
-            width: 100%;
+            margin: 0 auto;
         }
 
-        >div{
-            max-width: 280px;
-            width: 100%;
-            height: 96px;
+        p {
+            @extend .text-sm;
+            color: #999;
+            margin-top: 16px;
+        }
+    }
+
+    &-2 {
+
+        a::before {
+            display: block;
+            content: '';
+            width: 5px;
+            height: 5px;
+            background-color: #999;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    &-4 {
+
+        div {
+            width: 200px;
+            height: 110px;
             border-radius: 5px;
             overflow: hidden;
 
-            @media (max-width:841px) {
-                width: 400px;
-                height: 220px;
-            }
-
-            @media (max-width:450px) {
-                max-width: 100%;
-                width: 100%;
-            }
-
-            iframe{
+            iframe {
                 width: 100%;
                 height: 100%;
             }
         }
     }
 }
+

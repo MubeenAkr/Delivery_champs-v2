@@ -1,20 +1,15 @@
 .offer-section-container,
 .deals-section-container {
    padding: 0 20px;
-   
-   >.container {
+}
+
+.offer-section-container {
+   .offer-section {
       background-color: var(--bg-color-2);
       border-radius: 15px;
-
-   }
-
-}
-
-.deals-section-container {
-   >.container {
-      background-color: transparent;
    }
 }
+
 
 .deals-section{
    .card-body{

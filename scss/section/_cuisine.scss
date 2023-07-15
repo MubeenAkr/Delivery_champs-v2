@@ -1,20 +1,25 @@
 .cuisine-section-container {
-    // max-width: 1400px;
     padding: 0 20px;
     margin: 0 auto;
-    
+
     >.container {
-        background-color: var(--bg-color-1);
-        border-radius: 15px;
-        
+        @media (max-width:1400px) {
+            background-color: var(--bg-color-1);
+            border-radius: 15px;
+        }
     }
 }
-
 
 .cuisine-section {
     text-align: center;
 
     padding-top: 60px;
+    background-color: var(--bg-color-1);
+    border-radius: 15px;
+
+    @media (max-width:1400px) {
+        background-color: none;
+    }
 
     .container{
         max-width: 1280px;
@@ -23,11 +28,6 @@
     .container .cuisine-items{
         margin: 0 auto;
         margin-top: 60px;
-
-        // @media (max-width: 1500px) {    
-        //     max-width: 90%;
-        //     width: 100%; 
-        // }
 
         @media (max-width:1300px) {
             max-width: 90%;
@@ -92,12 +92,12 @@
         }
 
         .slick-prev {
-            left: -30px;
+            left: -20px;
             top: 30%;
         }
         
         .slick-next {
-            right: -30px;
+            right: -26px;
             top: 30%;
         }
 

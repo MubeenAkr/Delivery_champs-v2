@@ -140,10 +140,10 @@
 
     position: absolute;
     z-index: 10;
-    right: 0;
+    right:  0;
     top: 80px;
 
-    transform: translateX(100%);
+    transform: translateX(200%);
     transition: all 0.3s ease-in-out;
 
     &.active {

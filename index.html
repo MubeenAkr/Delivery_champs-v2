@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Food Delivery Service">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/fav-icon.svg" type="image/x-icon">
+    <title>Delivery Champs | Delivery at your door step</title>
+
+    <!-- slick js css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <main>
+        <!-- overlay on page load -->
+        <div class="overlay"></div>
+        <!-- city selectation cards -->
+        <div class="modal-box">
+            <h1 class="heading-primary">Select Your <span>City</span> </h1>
+            <p class="text-md">Find us in these cities and many more!</p>
+
+            <div class="modal-box-cards">
+                <a href="#" class="city-card">
+                    <img src="assets/img/sheikhupura-img.png" alt="">
+                    <p class="heading-secondary">Sheikhupura</p>
+                    <h1>S</h1>
+                </a>
+
+                <a href="#" class="city-card">
+                    <img src="assets/img/chiniot-img.png" alt="">
+                    <p class="heading-secondary">Chiniot</p>
+                    <h1>C</h1>
+                </a>
+
+                <a href="#" class="city-card">
+                    <img src="assets/img/lahore-img.png" alt="">
+                    <p class="heading-secondary">Lahore</p>
+                    <h1>L</h1>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- navbar -->
+        <header>
+            <div class="nav">
+                <a href="index.html" class="nav-logo">
+                    <img src="assets/img/logo.svg" alt="">
+                </a>
+
+                <div class="nav-center">
+                    <a href="#" class="nav-center-location nav-cta-btn">
+                        <img src="assets/img/location-icon.svg" alt="">
+
+                        <div class="nav-center-location-text nav-cta-btn-text">
+                            <h4>Deliver to:</h4>
+                            <p>Sheikhupura Lahore, Pakistan</p>
+                        </div>
+                    </a>
+
+                    <form action="post" class="search-form">
+                        <div class="input-field">
+                            <label for=""><img src="assets/img/search-icon.png" alt=""></label>
+                            <input type="search" placeholder="Search for restaurant, cuisine or a dish">
+                        </div>
+                    </form>
+
+                    <button class="nav-download-btn">
+                        <img src="assets/img/download-white.svg" alt="">
+
+                        Download App
+                    </button>
+                </div>
+
+                <div class="nav-right">
+                    <a href="signin.html" class=" nav-cta-btn">
+                        <img src="assets/img/profie-icon.svg" alt="">
+
+                        <div class="nav-cta-btn-text">
+                            <h4>Hello, Sign in</h4>
+                            <p>My Account</p>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class=" nav-cta-btn">
+                        <img src="assets/img/shopping-cart.svg" alt="">
+
+                        <div class="nav-cta-btn-text">
+                            <h4>3 items</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="address-modal-box">
+                <div class="address-modal-box-top">
+                    <img src="assets/img/back-arrow-white.svg" alt="">
+                    Enter your address or apartment name
+                </div>
+                
+                <div class="address-modal-box-center">
+                    <form action="">
+                        <div class="input-box">
+                            <label for="search"><img src="assets/img/address-modal-box-search-icon.svg" alt=""></label>
+                            <input id="search" type="search" placeholder="Try Wapda town, Phase 1, H block etc....">
+                        </div>
+    
+                        <button>
+                            <img src="assets/img/navigation-icon.svg" alt="">
+                            Use my Current location
+                        </button>
+                    </form>
+                </div>
+    
+                <div class="address-modal-box-bottom">
+                    <h5>Saved Addresses</h5>
+    
+                    <div class="address-modal-box-addresses">
+                        <a href="#" class="">
+                            <img src="assets/img/home-icon.svg" alt="">
+                            <h4>
+                                Home
+                                <span>Wapda town, phase 1, 77-E, Lahore</span>
+                            </h4>
+                        </a>
+                        
+                        <a href="#" class="">
+                            <img src="assets/img/home-icon.svg" alt="">
+                            <h4>
+                                Office
+                                <span>Wapda town, phase 1, 77-E, Lahore</span>
+                            </h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="navbar-location navbar-location-2" >
+                <div class="text-sm">
+                    DELIVER TO: <img src="assets/img/loaction-icon.png" alt="">
+                </div>
+                <button aria-label="Enter your location" class="text-sm navbar-location-btn" id="navbar-location-btn-md">
+                    WAPDA Town Block E 1, Phase 1 Lahore
+                    <img src="assets/img/down-arrow.png" alt="">
+                </button>
+
+                <form method="" class="navbar-location-form" id="navbar-location-form-2">
+                    <div class="navbar-location-input-box">
+                        <input class="text-base" type="text" placeholder="Enter your full address">
+                        <button aria-label="location search button icon">
+                            <img src="assets/img/right-arrow-white.png" alt="">
+                        </button>
+                    </div>
+                </form>
+            </div> -->
+        </header>
+        <!-- navbar ends here -->
+        
+        <!-- hero section -->
+        <!-- <section class="hero">
+            <div class="container">
+                <div class="hero-center">
+                    <h1>Find your <span>MENU</span> , Order your <span>FOOD</span> </h1>
+                    <p class="">Your favourite restaurant's menu here.</p>
+
+                    <form action="" class="hero-form">
+                        <div class="hero-search">
+                            <input class="text-base" type="search" id="search" placeholder="Search for restaurant, cuisine or a dish">
+                            <button aria-label="search-icon" class="text-base for="search"> 
+                                <img src="assets/img/search-icon.png" alt=""> 
+                                Search
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section> -->
+        <!-- hero section end here-->
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero-cards">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="">
+                                <h4>
+                                    Take your <span>Business</span> to
+                                    the next level
+                                </h4>
+                                <p>
+                                    Register your <span>Restaurant</span> on
+                                    our <span>App</span> 
+                                </p>
+                            </div>
+
+                            <a href="#">
+                                Learn more
+                            </a>
+                        </div>
+                        <div class="card-img">
+                            <img src="assets/img/hero-card-1-img.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="">
+                                <h4>
+                                    Get your own <br>
+                                    <span>Delivery Champs Franchise</span>
+                                </h4>
+                                <p>
+                                    At very <span>Low Cost</span> in
+                                    your <span>City</span>
+                                </p>
+                            </div>
+
+                            <a href="#">
+                                Learn more
+                            </a>
+                        </div>
+                        <div class="card-img">
+                            <img src="assets/img/hero-card-2-img.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="">
+                                <h4>
+                                    Visit <span>Our App</span> just
+                                    feels Right!
+                                </h4>
+                                <p> 
+                                    Take a look & order your
+                                    <span>Desired Meal</span>
+                                </p>
+                            </div>
+
+                            <a href="#">
+                                Download Now                            
+                            </a>
+                        </div>
+                        <div class="card-img">
+                            <img src="assets/img/hero-card-3-img.svg" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- cuisine section -->
+        <div class="cuisine-section-container">
+            <div class="container">
+                <section class="cuisine-section">
+                    <div class="container"> 
+                        <div class="section-header">
+                            <h4 class="text-md">CUISINES</h4>
+                            <h2 class="heading-secondary">CHOOSE A <span>TASTE</span> </h2>
+                            <h5 class="text-md">An easier way to order food online</h5>
+                        </div>
+        
+                        <div class="cuisine-items">
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-1.png" alt="">
+                                </div>
+                                Desi Foods
+                            </a>
+        
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-2.png" alt="">
+                                </div>
+                                Appetizers
+                            </a>
+        
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-3.png" alt="">
+                                </div>
+                                Bakery
+                            </a>
+        
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-4.png" alt="">
+                                </div>
+                                Bbq Variety                    
+                            </a>
+        
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-5.png" alt="">
+                                </div>
+                                Biryani
+                            </a>
+        
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-1.png" alt="">
+                                </div>
+                                Desi Foods
+                            </a>
+        
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-2.png" alt="">
+                                </div>
+                                Appetizers
+                            </a>
+        
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-3.png" alt="">
+                                </div>
+                                Bakery
+                            </a>
+        
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-4.png" alt="">
+                                </div>
+                                Bbq Variety
+                            </a>
+        
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-5.png" alt="">
+                                </div>
+                                Biryani
+                            </a>
+        
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-2.png" alt="">
+                                </div>
+                                Appetizers
+                            </a>
+        
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-3.png" alt="">
+                                </div>
+                                Bakery
+                            </a>
+        
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-4.png" alt="">
+                                </div>
+                                Bbq Variety
+                            </a>
+        
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-5.png" alt="">
+                                </div>
+                                Biryani
+                            </a>
+        
+                            <a href="#" class="cuisine-item text-base">
+                                <div class="cuisine-item-img">
+                                    <img src="assets/img/cuisine-item-1.png" alt="">
+                                </div>
+                                Desi Foods
+                            </a>
+        
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- cuisine section end here -->
+
+        <!-- Deals section -->
+        <div class="deals-section-container">
+            <div class="container">
+                <section class="deals-section">
+                    <div class="container ">
+                        <div class="section-header">
+                            <h4 class="text-md">HOT DEALS</h4>
+                            <h2 class="heading-secondary">CHOOSE A <span>DEAL</span> </h2>
+                            <h5 class="text-md">An easier way to order food online</h5>
+                        </div>
+            
+                        <div class="cards slider">
+        
+                            <div class="card-primary">
+                                
+                                <div class="card-img">
+                                    <img src="assets/img/card-img-1.png" alt="">
+                                </div>
+        
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <small class="text-xxs">
+                                            Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese,
+                                            Burger Variety, Pizzas 
+                                        </small>
+                                        <p class="text-sm">
+                                            Civils Quarters Rd, Jinnah Park, Sheikhupura,
+                                            Punjab, Pakistan
+                                        </p>
+        
+                                        <div class="card-review">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                        </div>
+        
+                                        <ul class="text-xs">
+                                            <li >25% Off Flat On All Menu</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                        </ul>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="card-primary">
+                                
+                                <div class="card-img">
+                                    <img src="assets/img/card-img-2.png" alt="">
+                                </div>
+        
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <small class="text-xxs">
+                                            Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese,
+                                            Burger Variety, Pizzas 
+                                        </small>
+                                        <p class="text-sm">
+                                            Civils Quarters Rd, Jinnah Park, Sheikhupura,
+                                            Punjab, Pakistan
+                                        </p>
+        
+                                        <div class="card-review">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                        </div>
+        
+                                        <ul class="text-xs">
+                                            <li>25% Off Flat On All Menu</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                        </ul>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="card-primary">
+                                
+                                <div class="card-img">
+                                    <img src="assets/img/card-img-3.png" alt="">
+                                </div>
+        
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <small class="text-xxs">
+                                            Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese,
+                                            Burger Variety, Pizzas 
+                                        </small>
+                                        <p class="text-sm">
+                                            Civils Quarters Rd, Jinnah Park, Sheikhupura,
+                                            Punjab, Pakistan
+                                        </p>
+        
+                                        <div class="card-review">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                        </div>
+        
+                                        <ul class="text-xs">
+                                            <li>25% Off Flat On All Menu</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                        </ul>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="card-primary">
+                                
+                                <div class="card-img">
+                                    <img src="assets/img/card-img-4.png" alt="">
+                                </div>
+        
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <small class="text-xxs">
+                                            Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese,
+                                            Burger Variety, Pizzas 
+                                        </small>
+                                        <p class="text-sm">
+                                            Civils Quarters Rd, Jinnah Park, Sheikhupura,
+                                            Punjab, Pakistan
+                                        </p>
+        
+                                        <div class="card-review">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                        </div>
+        
+                                        <ul class="text-xs">
+                                            <li>25% Off Flat On All Menu</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                        </ul>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="card-primary">
+                                
+                                <div class="card-img">
+                                    <img src="assets/img/card-img-2.png" alt="">
+                                </div>
+        
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <small class="text-xxs">
+                                            Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese,
+                                            Burger Variety, Pizzas 
+                                        </small>
+                                        <p class="text-sm">
+                                            Civils Quarters Rd, Jinnah Park, Sheikhupura,
+                                            Punjab, Pakistan
+                                        </p>
+        
+                                        <div class="card-review">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                        </div>
+        
+                                        <ul class="text-xs">
+                                            <li>25% Off Flat On All Menu</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                        </ul>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="card-primary">
+                                
+                                <div class="card-img">
+                                    <img src="assets/img/card-img-1.png" alt="">
+                                </div>
+        
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <small class="text-xxs">
+                                            Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese,
+                                            Burger Variety, Pizzas 
+                                        </small>
+                                        <p class="text-sm">
+                                            Civils Quarters Rd, Jinnah Park, Sheikhupura,
+                                            Punjab, Pakistan
+                                        </p>
+        
+                                        <div class="card-review">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                        </div>
+        
+                                        <ul class="text-xs">
+                                            <li>25% Off Flat On All Menu</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                        </ul>
+        
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Deals section ends here-->
+
+        <!-- offer section -->
+        <div class="offer-section-container">
+            <div class="container">
+                <section class="offer-section">
+                    <div class="container ">
+                        <div class="section-header">
+                            <h4 class="text-md">DISCOUNT OFFERS</h4>
+                            <h2 class="heading-secondary">CHOOSE A <span>OFFER</span> </h2>
+                            <h5 class="text-md">An easier way to order food online</h5>
+                        </div>
+            
+                        <div class="cards slider">
+        
+                            <div class="card-primary">
+                                
+                                <div class="card-img">
+                                    <img src="assets/img/card-img-1.png" alt="">
+                                </div>
+        
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <small class="text-xxs">
+                                            Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese,
+                                            Burger Variety, Pizzas 
+                                        </small>
+                                        <p class="text-sm">
+                                            Civils Quarters Rd, Jinnah Park, Sheikhupura,
+                                            Punjab, Pakistan
+                                        </p>
+        
+                                        <div class="card-review">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                        </div>
+        
+                                        <ul class="text-xs">
+                                            <li>25% Off Flat On All Menu</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                        </ul>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="card-primary">
+                                
+                                <div class="card-img">
+                                    <img src="assets/img/card-img-2.png" alt="">
+                                </div>
+        
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <small class="text-xxs">
+                                            Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese,
+                                            Burger Variety, Pizzas 
+                                        </small>
+                                        <p class="text-sm">
+                                            Civils Quarters Rd, Jinnah Park, Sheikhupura,
+                                            Punjab, Pakistan
+                                        </p>
+        
+                                        <div class="card-review">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                        </div>
+        
+                                        <ul class="text-xs">
+                                            <li>25% Off Flat On All Menu</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                        </ul>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="card-primary">
+                                
+                                <div class="card-img">
+                                    <img src="assets/img/card-img-3.png" alt="">
+                                </div>
+        
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <small class="text-xxs">
+                                            Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese,
+                                            Burger Variety, Pizzas 
+                                        </small>
+                                        <p class="text-sm">
+                                            Civils Quarters Rd, Jinnah Park, Sheikhupura,
+                                            Punjab, Pakistan
+                                        </p>
+        
+                                        <div class="card-review">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                        </div>
+        
+                                        <ul class="text-xs">
+                                            <li>25% Off Flat On All Menu</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                        </ul>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="card-primary">
+                                
+                                <div class="card-img">
+                                    <img src="assets/img/card-img-4.png" alt="">
+                                </div>
+        
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <small class="text-xxs">
+                                            Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese,
+                                            Burger Variety, Pizzas 
+                                        </small>
+                                        <p class="text-sm">
+                                            Civils Quarters Rd, Jinnah Park, Sheikhupura,
+                                            Punjab, Pakistan
+                                        </p>
+        
+                                        <div class="card-review">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                        </div>
+        
+                                        <ul class="text-xs">
+                                            <li>25% Off Flat On All Menu</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                        </ul>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="card-primary">
+                                
+                                <div class="card-img">
+                                    <img src="assets/img/card-img-2.png" alt="">
+                                </div>
+        
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <small class="text-xxs">
+                                            Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese,
+                                            Burger Variety, Pizzas 
+                                        </small>
+                                        <p class="text-sm">
+                                            Civils Quarters Rd, Jinnah Park, Sheikhupura,
+                                            Punjab, Pakistan
+                                        </p>
+        
+                                        <div class="card-review">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                        </div>
+        
+                                        <ul class="text-xs">
+                                            <li>25% Off Flat On All Menu</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                        </ul>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="card-primary">
+                                
+                                <div class="card-img">
+                                    <img src="assets/img/card-img-1.png" alt="">
+                                </div>
+        
+                                <div class="card-body">
+                                    <div class="card-content">
+                                        <small class="text-xxs">
+                                            Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese,
+                                            Burger Variety, Pizzas 
+                                        </small>
+                                        <p class="text-sm">
+                                            Civils Quarters Rd, Jinnah Park, Sheikhupura,
+                                            Punjab, Pakistan
+                                        </p>
+        
+                                        <div class="card-review">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                            <img src="assets/img/star.svg" alt="">
+                                        </div>
+        
+                                        <ul class="text-xs">
+                                            <li>25% Off Flat On All Menu</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                            <li>Sandal Naqrai Syrup Just In Rs 280/-</li>
+                                        </ul>
+        
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- offer section ends here-->
+
+        <!-- resturants section starts here -->
+        <section class="restaurant-section">
+            <div class="container">
+                <div class="section-header">
+                    <h4 class="text-md">MOST POPULAR RESTAURANTS</h4>
+                    <h2 class="heading-secondary">CHOOSE <span>RESTAURANTS</span> </h2>
+                    <h5 class="text-md">Select from the best dishes, available</h5>
+                </div>
+
+                <div class="cards">
+                    <div class="card-secondary">
+                        <div class="card-img">
+                            <img src="assets/img/secondary-card-img-1.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="">
+                                <h3 class="heading-secondary">Down Town Cafe</h3>
+                                <small class="text-xxs">
+                                    Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese
+                                    Burger Variety, Pizzas 
+                                </small>
+                                <p class="text-base">16/2 Hospital Rd, Jinnah  Park, Sheikhupura, Punjab, Pakistan</p>
+                                <div class="review">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                </div>
+                            </div>
+
+                            <ul class="text-xs">
+                                <li>25% Off Flat On All Menu</li>
+                                <li>Discounts Available</li>
+                                <li>Limited Time Offer</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card-secondary">
+                        <div class="card-img">
+                            <img src="assets/img/secondary-card-img-2.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="">
+                                <h3 class="heading-secondary">Bismillah Restaurant</h3>
+                                <small class="text-xxs">
+                                    Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese
+                                    Burger Variety, Pizzas 
+                                </small>
+                                <p class="text-base">Railway Road, Civil Lines , Sheikhupura, Punjab, Pakistan</p>
+                                <div class="review">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                </div>
+                            </div>
+                            
+                            <ul class="text-xs">
+                                <li>25% Off Flat On All Menu</li>
+                                <li>Discounts Available</li>
+                                <li>Limited Time Offer</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card-secondary">
+                        <div class="card-img">
+                            <img src="assets/img/secondary-card-img-3.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <div class="">
+                                <h3 class="heading-secondary">Jinnah Broast</h3>
+                                <small class="text-xxs">
+                                    Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese
+                                    Burger Variety, Pizzas 
+                                </small>
+                                <p class="text-base">Railway Road, Civil Lines , Sheikhupura, Punjab, Pakistan</p>
+                                <div class="review">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                </div>
+                            </div>
+                            
+                            <ul class="text-xs">
+                                <li>25% Off Flat On All Menu</li>
+                                <li>Discounts Available</li>
+                                <li>Limited Time Offer</li >
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card-secondary">
+                        <div class="card-img">
+                            <img src="assets/img/secondary-card-img-4.png" alt="">
+                        </div>
+
+                        <div class="card-content">
+                            <div class="">
+                                <h3 class="heading-secondary">Chouhan Fish Cornor</h3>
+                                <small class="text-xxs">
+                                    Paratha Rolls, Chicken Soup, Sandwich, Rice, Chinese
+                                    Burger Variety, Pizzas 
+                                </small>
+                                <p class="text-base">16/2 Hospital Rd, Jinnah Park, Sheikhupura, Punjab, Pakistan</p>
+                                <div class="review">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                    <img src="assets/img/star.svg" alt="">
+                                </div>
+                            </div>
+
+                            <ul class="text-xs">
+                                <li>25% Off Flat On All Menu</li>
+                                <li>Discounts Available</li>
+                                <li>Limited Time Offer</li>
+                            </ul> 
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- resturants section ends here -->
+
+        <!-- App section -->
+        <section class="container">
+            <div class="app-section">
+                <div class="container">
+                    <div class="app-section-content">
+    
+                        <img src="assets/img/app-section-logo.svg" alt="">
+    
+                        <h1>
+                            Order your Favorite Food
+                            in one click!
+                        </h1>
+    
+                        <p>
+                            Available now on both iOS & Android. Download
+                            from the links below!
+                        </p>
+    
+                        <div class="app-section-download">
+                            <div class="qr-code">
+                                <img src="assets/img/app-section-qr-code.svg" alt="">
+                            </div>
+    
+                            <div class="btns">
+                                <a href="#">
+                                    <img src="assets/img/google-btn.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/img/app-store-btn.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="app-section-img">
+                        <img src="assets/img/mobile-img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- App section ends here -->
+
+        <!-- footer starts  -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+
+                    <div class="col col-1">
+                        <div class="footer-logo">
+                            <img src="assets/img/footer-logo.png" alt="">
+                        </div>
+
+                        <div class="col-1-info">
+                            <a href="tel:042-35180932">
+                                <img src="assets/img/phone-icon.png" alt="">
+                                042-35180932
+                            </a>
+
+                            <a href="mailto:info@deliverychamps.pk">
+                                <img src="assets/img/email-icon.png" alt="">
+                               info@deliverychamps.pk
+                            </a>
+
+                        </div>       
+                    </div>
+                    
+
+                    <div class="col col-2">
+                        <h4 class="text-base">POLICIES & INFO</h4>
+
+                        <ul>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy & Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Condition</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col col-3">
+                        <h4 class="text-base">FIND US</h4>
+                        <a href="#">
+                            <!-- <img src="assets/img/location-icon-2.png" alt=""> -->
+                            House #77, Block E1, Wapda Town Phase1,
+                            Lahore, Punjab, Pakistan
+                        </a>
+                        <div class="">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27234.768568410247!2d74.2766072!3d31.432138300000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1681896824423!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Deliverychamps Head Office Location"></iframe>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom-icons">
+                        <a href="#"><img src="assets/img/faccebook-icon.png" alt=""></a>
+                        <a href="#"><img src="assets/img/instagram-icon.png" alt=""></a>
+                        <a href="#"><img src="assets/img/youtube-icon.png" alt=""></a>       
+                    </div>
+
+                    <p>Powered By Waantech.pvt © 2023</p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer ends here -->
+
+    </main>
+
+    <!--  -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slider js code -->
+    <script>
+        $('.slider').slick({
+            dots: false,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                breakpoint: 1300,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+
+                {
+                breakpoint: 1100,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 1,
+                        // dots: true,
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+
+
+        $('.cuisine-items').slick({
+            // infinite: false,
+            slidesToShow: 10,
+            slidesToScroll: 1,
+            // variableWidth: true,
+            // centerMode: true,
+            responsive: [
+                {
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 8,
+                }
+                },
+                {
+                    breakpoint: 1100,
+                    settings: {
+                        slidesToShow: 6,
+                    }
+                },
+                
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 5,
+                    }
+                },
+                {
+                breakpoint: 800,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                    }
+                },
+
+                {
+                breakpoint: 650,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                breakpoint: 450,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        // centerMode: false,
+                        // variableWidth: false,
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        
+
+    </script>
+				
+</body>
+</html>

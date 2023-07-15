@@ -1,0 +1,21 @@
+.btn{
+
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    &-primary{
+        background-color: var(--text-color-1);
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        padding: 12px;
+        display: block;
+        width: 100%;
+
+        &:hover{
+            box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+        }
+
+        
+    }
+}

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+a,button{
+    cursor: pointer;
+}
+
+button,
+input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    max-width: 1360px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.section-header{
+    h4{
+        font-weight: 600;
+    }
+    
+    h2{
+        color: var(--text-color-2);
+        font-weight: 500;
+
+        span{
+            color: var(--text-color-1);
+        }
+    }
+
+    h5{
+        color: var(--text-color-2);
+    }
+}
+
+// abstract folder files
+@import "abstract/variable";
+@import "abstract/typography";
+
+// components folder files
+@import "components/navbar";
+@import "components/hero";
+@import "components/cards";
+@import "components/btns";
+@import "components/modal-box";
+
+// section folder files
+@import "section/cuisine";
+@import "section/deals";
+@import "section/footer";
+@import "section/app-section";
+@import "section/restaurant";
+@import "section/form";
+
+
+// pages folder files
+@import "pages/signup";
+@import "pages/vendor";

@@ -1,0 +1,23 @@
+.signup-form{
+    .input-fields{
+
+        .col{
+            display: flex;
+            gap: 20px;
+
+            @media (max-width:500px) {
+                flex-direction: column;
+            }
+        }
+    }
+    
+    button{
+        margin-top: 60px;
+    }
+}
+
+.forgot-form{
+    button{
+        margin-bottom: 0;
+    }
+}

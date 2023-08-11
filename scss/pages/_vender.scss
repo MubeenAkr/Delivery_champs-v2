@@ -1,0 +1,113 @@
+.vender-hero {
+
+   &-section {
+      background-image:  url(/assets/img/vendermenu-page-hero-bg-img.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding-top: 110px;
+      padding-bottom: 140px;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;   
+      margin-bottom: 60px;
+   }
+   
+   &-center {
+      background-color: var(--text-color-2);
+      border:  2px solid rgba(255, 255, 255, 0.6) ;
+      border-radius: 10px;
+      max-width: 685px;
+      width: 100%;
+      padding: 40px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      
+
+
+      h1 {
+         @extend .heading-primary;
+         font-weight: 700;
+         color: var(--color-white);
+         line-height: 41px;
+
+         span {
+            color: var(--text-color-1);
+
+         }
+      }
+
+      div {
+         @extend .text-base;
+         color: var(--color-white);
+
+         display: flex;
+         align-items: center;
+         gap: 7px;
+      }
+   }
+}
+
+.vender-review {
+   max-width: 560px;
+   width: 100%;
+   margin: 0 auto;
+   margin-top: 100px;
+   background-color: var(--color-white);
+   border-radius: 10px;
+   overflow: hidden;
+
+   >img {
+      display: block;
+      width: 100%;
+   }
+
+
+   &-text {
+      text-align: center;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 7px;
+
+      margin-block: 20px;;
+
+      h1 {
+         font-size: 20px ;
+         font-weight: 900;
+         color: var(--text-color-2);
+         letter-spacing: 3%;
+      }
+
+      small {
+         @extend .text-xs;
+      }
+
+      p {
+         @extend .text-base;
+         color: var(--text-color-2);
+      }
+   }
+
+   .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+
+
+      padding: 25px;
+   }
+
+   .card {
+      background-color: var(--bg-color-1);
+      border-radius: 5px;
+      padding: 10px;
+   }
+}
+
+

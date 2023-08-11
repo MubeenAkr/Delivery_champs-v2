@@ -26,6 +26,7 @@ body {
 
 main {
     overflow-x: hidden;
+    position: relative;
 }
 
 html{
@@ -83,4 +84,5 @@ html{
 
 // pages folder files
 @import "pages/signup";
-@import "pages/vendor";
+@import "pages/vender";
+@import "pages/vendermenu";

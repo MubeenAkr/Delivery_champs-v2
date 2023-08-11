@@ -30,7 +30,7 @@
             display: flex;
             align-items: stretch;
             justify-content: space-between;
-            gap: 70px;
+            gap: 50px;
             
             .line {
                 width: 1px !important;
@@ -100,18 +100,20 @@
     }
 
     &-1 {
-        max-width: 230px;
+        max-width: 270px;
         width: 100%;
 
         img {
             display: block;
             margin: 0 auto;
+            max-width: 90px;    
         }
 
         p {
             @extend .text-sm;
             color: #999;
             margin-top: 16px;
+            padding-bottom: 6px;
         }
     }
 
